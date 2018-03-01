@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:background="@color/colorPrimary">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="对等设备扫描"
+            android:layout_centerInParent="true"
+            android:textColor="@color/white"
+            android:textSize="18sp"/>
+
+        <ImageButton
+            android:id="@+id/ib_menu"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:src="@drawable/iv_menu_point"
+            android:scaleType="centerCrop"
+            android:background="@color/transparent"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:layout_marginEnd="10dp"/>
+        
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:id="@+id/linearLayout1"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <fragment
+            class="com.xjhaobang.p2pchat.fragment.DeviceListFragment"
+            android:id="@+id/frag_list"
+            android:layout_width="match_parent"
+            android:layout_height="200dp">
+            <!-- Preview: layout=@layout/row_devices -->
+        </fragment>
+        <fragment
+            class="com.xjhaobang.p2pchat.fragment.DeviceDetailFragment"
+            android:id="@+id/frag_detail"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <!-- Preview: layout=@layout/device_detail -->
+        </fragment>
+    </LinearLayout>
+</LinearLayout>

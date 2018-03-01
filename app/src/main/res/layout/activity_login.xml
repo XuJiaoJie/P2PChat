@@ -1,0 +1,84 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/colorPrimary"
+              android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tb_login"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_topbar_height"
+        android:layout_marginTop="10dp"
+        android:text="@string/btn_login_login"
+        android:textColor="@color/white"
+        android:gravity="center"
+        android:textSize="18sp">
+    </TextView>
+
+    <ScrollView
+        android:id="@+id/sc_login_form"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/ll_login_form"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/et_login_username"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dimen_margin_login"
+                android:layout_marginRight="@dimen/dimen_margin_login"
+                android:layout_marginTop="60dp"
+                android:drawableLeft="@drawable/iv_user"
+                android:hint="@string/login_phonenum"
+                android:imeOptions="actionNext"
+                android:maxLength="11"
+                android:maxLines="1"
+                android:textColor="@color/color_white_login"
+                android:textSize="@dimen/dimen_et_login"
+                android:theme="@style/EditTextStyle"/>
+
+            <!--<EditText-->
+                <!--android:id="@+id/et_login_password"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_marginLeft="@dimen/dimen_margin_login"-->
+                <!--android:layout_marginRight="@dimen/dimen_margin_login"-->
+                <!--android:layout_marginTop="5dp"-->
+                <!--android:drawableLeft="@drawable/iv_login_password"-->
+                <!--android:hint="@string/login_password"-->
+                <!--android:imeActionId="@+id/login"-->
+                <!--android:imeOptions="actionDone"-->
+                <!--android:inputType="textPassword"-->
+                <!--android:maxLines="1"-->
+                <!--android:textColor="@color/color_white_login"-->
+                <!--android:textSize="@dimen/dimen_et_login"-->
+                <!--android:theme="@style/EditTextStyle"/>-->
+
+
+            <Button
+                android:id="@+id/btn_login_login"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="@dimen/dimen_margin_login"
+                android:layout_marginRight="@dimen/dimen_margin_login"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/selector_btn_login"
+                android:text="@string/btn_login_login"
+                android:textColor="@color/colorPrimary"
+                android:textSize="@dimen/dimen_title_login"
+                />
+
+
+        </LinearLayout>
+
+
+    </ScrollView>
+</LinearLayout>

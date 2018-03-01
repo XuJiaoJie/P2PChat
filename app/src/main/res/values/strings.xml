@@ -1,0 +1,27 @@
+<resources>
+    <string name="app_name">P2PChat</string>
+    <string name="title_activity_login">登录</string>
+
+    <!-- Strings related to login -->
+    <string name="login_phonenum">输入用户名</string>
+    <string name="login_password">输入密码</string>
+    <string name="btn_login_login">登录</string>
+    <string name="tv_organization_name">单位信息</string>
+
+    <string name="action_settings">设置</string>
+    <string name="enable_p2p_button">P2P开关</string>
+    <string name="discover_peers_button">搜索设备</string>
+    <string name="connect_peer_button">连接</string>
+    <string name="disconnect_peer_button">断开</string>
+    <string name="get_file_button">传输文件</string>
+    <string name="empty"></string>
+    <string name="yes">是</string>
+    <string name="no">否</string>
+    <string name="client_text">这个设备作为客户端，可传输文件</string>
+    <string name="empty_message">没有找到设备，请打开开关再搜索</string>
+    <string name="p2p_off_warning">Enable P2P from action bar button above or system settings</string>
+    <string name="group_owner_text">"我是这个组的拥有者 "</string>
+    <string name="label_me">我的设备</string>
+    <string name="label_peers">对等设备</string>
+
+</resources>
